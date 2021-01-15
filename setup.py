@@ -1,5 +1,6 @@
 import setuptools
-
+with open('README.md') as f:
+    README = f.read()
 
 setuptools.setup(
     author="Siddharth Khattak",
@@ -7,12 +8,12 @@ setuptools.setup(
     name='InvoiceService',
     license="MIT",
     description='InvoiceService is a package for invoice module',
-    version='v0.0.1',
-    long_description='',
+    version='v0.0.3',
+    long_description= README,
     url='https://github.com/Siddharth0803/InvoiceService.git',
     packages=["InvoiceService"],
     python_requires=">=3.5",
-    install_requires=['requests', 'json', 'pathlib'],
+    install_requires=['requests', 'pathlib'],
     classifiers=[
         # Trove classifiers
         # (https://pypi.python.org/pypi?%3Aaction=list_classifiers)
